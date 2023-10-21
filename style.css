@@ -11,14 +11,36 @@
 	font-weight: 400;
 }
 
+#grid{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	padding: 80px 50px;
+}
+@media(max-width: 800px){
+	#grid{
+		display: block;
+	}
+}
+
+.green{
+	background-color: #1B4933;
+	color: white;
+}
+.beige{
+	background-color: #E0D1B2;
+}
+.lightgreen{
+	background-color: #F0F0E2;
+}
 body{
 	color: #232426;
 }
 header {
 	padding: 50px;
 }
+
 main{
-	padding: 50px;
+	/* padding: 50px; */
 }
 nav > ul {
 	display: flex;
@@ -56,7 +78,7 @@ blockquote{
 	font: 20px 'EB Garamond', serif;
 	font-weight: 500;
 	font-style: italic;
-	padding:  40px 0px;
+	padding:  40px 50px;
 
 }
 .quoteinfo{
