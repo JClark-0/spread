@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch&family=EB+Garamond:ital,wght@0,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+	font-family: 'Pencerio';
+	src: url(font/ClashDisplay-Medium.ttf) format("opentype");
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Boxing';
+	src: url(font/ClashDisplay-Medium.ttf) format("opentype");
+	font-weight: 400;
+}
 
 body{
 	color: #232426;
@@ -20,12 +32,35 @@ nav > ul {
 h1{
 	font-size: 64px;
 }
+
 h2{
-	font-size: 32px;
+	font: 32px 'inter', san-serif;
+	font-weight: 500;
+	line-height: 140%;
+	padding-bottom: 24px;
 }
+
 h3{
-	font-size: 24px;
+	font: 24px 'inter', san-serif;
+	font-weight: 600;
+	line-height: 150%;
+
 }
 p{
-    font-size: 16px;
+    font: 18px 'inter', san-serif;
+	font-weight: 400;
+	line-height: 160%;
+
+}
+blockquote{
+	font: 20px 'EB Garamond', serif;
+	font-weight: 500;
+	font-style: italic;
+	padding:  40px 0px;
+
+}
+.quoteinfo{
+	font: 16px 'EB Garamond', serif;
+	font-weight: 400;
+	padding-bottom: 24px;
 }
