@@ -1,9 +1,13 @@
 
-main{
+body{
 	color: #232426;
-	padding: 56px 144px 116px 144px;
 }
-
+header {
+	padding: 50px;
+}
+main{
+	padding: 50px;
+}
 nav > ul {
 	display: flex;
 	gap: 20px;
