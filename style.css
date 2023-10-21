@@ -4,6 +4,10 @@ main{
 	padding: 56px 144px 116px 144px;
 }
 
+nav > ul {
+	display: flex;
+	gap: 20px;
+}
 h1{
 	font-size: 64px;
 }
