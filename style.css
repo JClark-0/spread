@@ -78,7 +78,7 @@ header {
 	padding: 50px;
 }
 
-/* Style for (only) the list in the nav */
+/* Top navigation poistion and style */
 nav > ul{
 	display: flex;
 	justify-content: flex-end;
@@ -89,31 +89,6 @@ nav > ul{
 	width: 100%;
 	padding: 1em;
 	z-index: 2;
-}
-
-/* Adds arrow pointing Up+Right after external links */
-a[href^='https://']::after {
-	font-family: 'Noto Sans Symbols 2', sans-serif;
-	font-size: 80%;
-	content: ' \2197'; 
-}
-
-/* Floating back to top button */
-#topButton {
-	position: fixed;
-	background-color:rgb(3, 28, 3);
-	padding: 4%;
-	border-radius: 50%;
-	bottom: 0;
-	right: 0;
-	margin:1em;
-	z-index: 2;
-}
-
-/* Hover style for all links */
-a:hover {
-	color: rgb(74, 242, 74); 
-	opacity: 100%;
 }
 
 h1{
@@ -177,19 +152,31 @@ p, ul {
 	z-index: 1;
 }
 
+/* Adds arrow pointing Up+Right after external links */
+a[href^='https://']::after {
+	font-family: 'Noto Sans Symbols 2', sans-serif;
+	font-size: 80%;
+	content: ' \2197'; 
+}
+
+/* Floating back to top button */
+#topButton {
+	position: fixed;
+	background-color:rgb(3, 28, 3);
+	padding: 4%;
+	border-radius: 50%;
+	bottom: 0;
+	right: 0;
+	margin:1em;
+	z-index: 2;
+}
+
 /* Styles of links that are not within the article */
 a:not(.link) {
 	font: 18px 'inter', san-serif;
 	color:white; 
 	font-weight: 400;
 	z-index: 1;
-}
-
-/* Only Bullet points */
-li:not(.navigation){
-	list-style-type: disc;
-	margin-left:1em;
-	padding-bottom: 5px;
 }
 
 /* Styles of links within article */
@@ -203,6 +190,18 @@ li:not(.navigation){
 	font-weight: 600;
 }
 
+/* Hover style for all links */
+a:hover {
+	color: rgb(74, 242, 74); 
+	opacity: 100%;
+}
+
+/* Only Bullet points */
+li:not(.navigation){
+	list-style-type: disc;
+	margin-left:1em;
+	padding-bottom: 5px;
+}
 
 blockquote{
 	font: 20px 'EB Garamond', serif;
