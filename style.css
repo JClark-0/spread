@@ -120,7 +120,8 @@ p, ul{
 	line-height: 160%;
 	padding-bottom: 10px;
 }
-li{
+
+li:not(.navigation){
 	list-style-type: disc;
 	padding-bottom: 5px;
 }
