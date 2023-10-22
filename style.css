@@ -78,6 +78,7 @@ header {
 	padding: 50px;
 }
 
+/* Style for (only) the list in the nav */
 nav > ul{
 	display: flex;
 	justify-content: flex-end;
@@ -90,12 +91,14 @@ nav > ul{
 	z-index: 2;
 }
 
+/* Adds arrow pointing Up+Right after external links */
 a[href^='https://']::after {
 	font-family: 'Noto Sans Symbols 2', sans-serif;
 	font-size: 80%;
 	content: ' \2197'; 
 }
 
+/* Floating back to top button */
 #topButton {
 	position: fixed;
 	background-color:rgb(3, 28, 3);
@@ -106,6 +109,8 @@ a[href^='https://']::after {
 	margin:1em;
 	z-index: 2;
 }
+
+/* Hover style for all links */
 a:hover {
 	color: rgb(74, 242, 74); 
 	opacity: 100%;
@@ -172,6 +177,7 @@ p, ul {
 	z-index: 1;
 }
 
+/* Styles of links that are not within the article */
 a:not(.link) {
 	font: 18px 'inter', san-serif;
 	color:white; 
@@ -179,12 +185,14 @@ a:not(.link) {
 	z-index: 1;
 }
 
+/* Only Bullet points */
 li:not(.navigation){
 	list-style-type: disc;
 	margin-left:1em;
 	padding-bottom: 5px;
 }
 
+/* Styles of links within article */
 .link {
 	position: absolute;
 	display:block;
