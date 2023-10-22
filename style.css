@@ -95,3 +95,9 @@ blockquote{
 	font-weight: 400;
 	padding-bottom: 24px;
 }
+
+footer {
+	background-color: rgb(3, 28, 3);
+	color:white; 
+	padding: 2em;
+}
