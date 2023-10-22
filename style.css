@@ -2,13 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols+2&display=swap');
 
 @font-face {
-	font-family: 'Pencerio';
-	src: url(font/ClashDisplay-Medium.ttf) format("opentype");
+	font-family: 'pencerio';
+	src: url(font/Pencerio-Hairline.otf) format("opentype");
 	font-weight: 200;
 }
 @font-face {
-	font-family: 'Boxing';
-	src: url(font/ClashDisplay-Medium.ttf) format("opentype");
+	font-family: 'boxing';
+	src: url(font/Boxing-Regular.otf) format("opentype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'astloch';
+	src: url(font/Astloch-Regular.ttf) format("opentype");
 	font-weight: 400;
 }
 
@@ -109,6 +114,37 @@ h1{
 	line-height: 80%;
 	padding-top: 48px;
 	padding-bottom:48px;
+}
+.c{
+	font: 180px 'pencerio', san-serif;
+	-webkit-text-stroke: 2px black;
+}
+.ult{
+	font: 160px 'boxing', serif;
+}
+.o{
+	font: 180px 'pencerio', san-serif;
+}
+.f{
+	font: 180px 'pencerio', san-serif;
+}
+.t{
+	font: 180px 'pencerio', san-serif;
+}
+.h{
+	font: 180px 'astloch', san-serif;
+}
+.e{
+	font: 180px 'pencerio', san-serif;
+}
+.u{
+	font: 180px 'pencerio', san-serif;
+}
+.gl{
+	font: 180px 'pencerio', san-serif;
+}
+.y{
+	font: 180px 'pencerio', san-serif;
 }
 
 h2{
