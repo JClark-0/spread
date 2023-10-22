@@ -75,6 +75,7 @@ nav > ul {
 	position: fixed;
 	width: 100%;
 	padding: 1em;
+	z-index: 2;
 }
 
 a[href^='https://']::after {
@@ -95,6 +96,7 @@ a:hover {
 	bottom: 0;
 	right: 0;
 	margin:1em;
+	z-index: 2;
 }
 
 h1{
@@ -112,6 +114,7 @@ h3{
 	font: 24px 'inter', san-serif;
 	font-weight: 600;
 	line-height: 150%;
+	z-index: 1;
 
 }
 p, ul{
@@ -119,6 +122,7 @@ p, ul{
 	font-weight: 400;
 	line-height: 160%;
 	padding-bottom: 10px;
+	z-index: 1;
 }
 
 li:not(.navigation){
@@ -129,9 +133,8 @@ li:not(.navigation){
 .link {
 	position: absolute;
 	display:block;
-	left: 10px;
-
-	color:rgb(191, 191, 191);
+	left: 5px;
+	opacity: 30%;
 	font: 34px 'inter', san-serif;
 	font-weight: 600;
 }
