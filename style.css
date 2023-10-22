@@ -126,6 +126,16 @@ li:not(.navigation){
 	padding-bottom: 5px;
 }
 
+.link {
+	position: absolute;
+	display:block;
+	left: 10px;
+
+	color:rgb(191, 191, 191);
+	font: 34px 'inter', san-serif;
+	font-weight: 600;
+}
+
 
 blockquote{
 	font: 20px 'EB Garamond', serif;
