@@ -77,8 +77,9 @@ html{
 	.container{
 		flex-direction: column;
 	}
-	
 }
+
+/*background colors*/
 .green{
 	background-color: #1B4933;
 	color: white;
@@ -89,7 +90,10 @@ html{
 .lightgreen{
 	background-color: #F0F0E2;
 }
+
+
 body{
+	background-color: #F0F0E2;
 	color: #232426;
 }
 header {
@@ -101,8 +105,7 @@ nav > ul{
 	display: flex;
 	justify-content: flex-end;
 	gap: 20px;
-	background-color: rgb(3, 28, 3);
-	color:white;
+	color:black;
 	position: fixed;
 	width: 100%;
 	padding: 1em;
@@ -172,7 +175,6 @@ h2{
 
 .author{
 	border-top: 2px solid black;
-	/* border-bottom: 0.5px solid black; */
 	font: 16px 'inter', san-serif;
 	font-weight: 600;
 	padding-top: 16px
@@ -222,7 +224,7 @@ a[href^='https://']::after {
 /* Styles of links that are not within the article */
 a:not(.link) {
 	font: 18px 'inter', san-serif;
-	color:white; 
+	color: black; 
 	font-weight: 400;
 	z-index: 1;
 }
