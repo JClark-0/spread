@@ -39,6 +39,16 @@
 
 
 
+:root {
+	--font-size-h2: 24px;
+}
+
+marquee {
+	background-color:rgb(0, 0, 0);
+	color:white;
+	width:100%;
+	padding:20px;
+}
 html{
 	scroll-behavior: smooth;
 }
@@ -69,29 +79,18 @@ html{
 	/* border: 10px solid palegoldenrod; */
 }
 
-/*.container_column{
-	display: flex;
-	flex-direction: column;
-	padding: 80px 50px;
-}*/
-
-/*#grid{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	padding: 80px 50px;
-}*/
-
-
 @media(min-width: 800px) { 
 	.container{
 		flex-direction: row;
 	}
-}
-@media(min-width: 800px) {
 	.container_main{
 		flex-direction: row;
+		--font-size-h2: 36px;
+	
 	}
+
 }
+
 /*background colors*/
 .green{
 	background-color: #1B4933;
@@ -109,8 +108,12 @@ body{
 	background-color: #F0F0E2;
 	color: #232426;
 }
+
 header {
-	padding: 50px;
+	max-width: 70em;
+	min-width:35em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Top navigation poistion and style */
@@ -181,7 +184,7 @@ h1{
 /* end of the main font */
 
 h2{
-	font: 26px 'inter', san-serif;
+	font: var(--font-size-h2) 'inter', san-serif;
 	font-weight: 500;
 	line-height: 140%;
 	padding-top:48px;
@@ -204,6 +207,7 @@ h2{
 
 h3{
 	font: 24px 'inter', san-serif;
+
 	font-weight: 600;
 	line-height: 150%;
 	z-index: 1;
@@ -272,7 +276,6 @@ blockquote{
 	font-weight: 500;
 	font-style: italic;
 	padding:  40px 50px;
-	border: royalblue solid 10px;
 	background-color: white;
 }
 .quoteinfo{
