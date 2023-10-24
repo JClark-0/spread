@@ -117,10 +117,11 @@ h1{
 	text-align: center;
 }
 
+/* star of the main font */
 .c{
 	font: 180px 'pencerio', san-serif;
 	-webkit-text-stroke: 2px black;
-	line-height: 100px;
+	line-height: 100px; /*I want to */
 }
 .ul{
 	font: 160px 'boxing', serif;
@@ -157,14 +158,31 @@ h1{
 }
 .y{
 	font: 140px '0xa000', san-serif;
+	line-height: 100px;	
 }
+/* end of the main font */
 
 h2{
-	font: 32px 'inter', san-serif;
+	font: 26px 'inter', san-serif;
 	font-weight: 500;
 	line-height: 140%;
 	padding-top:48px;
 	padding-bottom: 48px;
+}
+
+.author{
+	border-top: 2px solid black;
+	/* border-bottom: 0.5px solid black; */
+	font: 16px 'inter', san-serif;
+	font-weight: 600;
+	padding-top: 16px
+}
+.articleinfo{
+	border-bottom: 1px solid black;
+	font: 16px 'inter', san-serif;
+	font-weight: 400;
+	padding-top: 4px;
+	padding-bottom: 16px;
 }
 
 h3{
