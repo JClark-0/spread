@@ -41,14 +41,14 @@
 
 :root {
 	--font-size-h1: 30vmin;
-	--font-size-h2: 24px;
+	--font-size-h2: 20px;
 	--font-size-h3: 18px;
 	--font-size-p:18px;
 	--line-height-h1: 10vmin;
 	--quote-position-1: static;
 	--quote-position-2: static;
 	--quote-position-3: static;
-
+	--quote-height: 80%;
 }
 
 html{
@@ -194,7 +194,7 @@ h2{
 	padding:  40px 50px 0px;
 	background-color: white;
 	width: 100%;
-	max-height: 550px;/*Temporary solution*/
+	max-height: var(--quote-height);/*Temporary solution*/
 }
 blockquote{
 	font: 20px 'EB Garamond', serif;
@@ -277,7 +277,7 @@ a:hover {
 
 
 
-@media(min-width: 375px) and (max-width: 767px){ 
+@media(min-width: 375px) and (max-width: 899px){ 
 	
 	.container{
 		flex-direction: column;
@@ -296,14 +296,17 @@ a:hover {
 	h3{
 		--font-size-h3:24px;
 	}
-	/*flex box for desktop view of quotes (might need to change to grid) */
+	.quote{
+		--quote-top-2:0px;
+		--quote-top-3:0px;
+	}
 
 }	
 
 
 
 /* for column */
-@media(min-width: 768px) { 
+@media(min-width: 900px) { 
 	
 	.container{
 		flex-direction: row;
@@ -315,6 +318,7 @@ a:hover {
 		--font-size-h2: 28px;
 		--font-size-h1: 176px;
 		--line-height-h1: 70px;
+
 	}
 	p{
 		--font-size-p: 20px;
@@ -331,6 +335,7 @@ a:hover {
 	--quote-top-2: -5vmin;
 	--quote-left-3: 13vmax;
 	--quote-top-3: -15vmin;
+	--quote-height:550px;
 	}
 }
 /*background colors*/
