@@ -89,6 +89,10 @@ header {
 	margin-right: auto;
 }
 
+main {
+	width: 100%;
+}
+
 /* Top navigation poistion and style */
 nav > ul{
 	display: flex;
