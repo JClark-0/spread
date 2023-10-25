@@ -284,8 +284,8 @@ a:hover {
 	
 	.container{
 		flex-direction: column;
-		--padding-tb: 80px;
-		--padding-lr: 50px;
+		--padding-tb: 40px;
+		--padding-lr: 16px;
 	}
 	.container_main{
 		flex-direction: column;
@@ -293,8 +293,8 @@ a:hover {
 		--font-size-h2: 28px;
 		--font-size-h1: 30vmin;
 		--line-height-h1: 70px;
-		--padding-tb: 80px;
-		--padding-lr: 50px;
+		--padding-tb: 40px;
+		--padding-lr: 16px;
 	}
 	p{
 		--font-size-p: 20px;
