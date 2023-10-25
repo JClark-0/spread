@@ -191,15 +191,15 @@ h2{
 	padding:  40px 50px 0px;
 	background-color: white;
 	width: 100%;
+	max-height: 550px;/*Temporary solution*/
 }
 blockquote{
 	font: 20px 'EB Garamond', serif;
 	font-weight: 500;
 	font-style: italic;
 	flex-grow: 1;
-	width: 400px;
+	max-width: 400px;
 	height: 100%;
-	border: #1B4933 solid 10px;
 }
 .quotetitle{
 	border: 2px dotted #1B4933;
@@ -210,15 +210,14 @@ blockquote{
 	text-align: center;
 	margin: 0 auto;
 }
-.quotecontent{
-	max-width: 400px;
-}
 .quoteinfo{
 	font: 16px 'EB Garamond', serif;
 	font-weight: 600;
 	padding-top: 12px;
 	padding-bottom: 24px;
 }
+
+/* Temporary solution for quote layout */
 .quotelayout1{
 	position: var(--quote-position-1);
 	left: var(--quote-left-1);
