@@ -49,6 +49,9 @@
 	--quote-position-2: static;
 	--quote-position-3: static;
 	--quote-height: 80%;
+	--padding-tb: 40px;
+	--padding-lr: 16px;
+	
 }
 
 html{
@@ -59,7 +62,7 @@ html{
 	flex-direction: column;
 	flex-basis: 0px;
 	gap: 3em;
-	padding: 40px 25px;
+	padding: var(--padding-tb) var(--padding-lr);
 	justify-content: center;
 	/*border: 10px red solid;*/
 }
@@ -67,7 +70,7 @@ html{
 	display: flex;
 	flex-direction: column;
 	gap: 3em;
-	padding: 40px 25px;
+	padding: var(--padding-tb) var(--padding-lr);
 	justify-content: center;
 }
 
@@ -281,14 +284,17 @@ a:hover {
 	
 	.container{
 		flex-direction: column;
-		padding: 80px 50px;
+		--padding-tb: 80px;
+		--padding-lr: 50px;
 	}
 	.container_main{
 		flex-direction: column;
-		padding: 80px 50px;
+		padding: var(--padding-tb) var(--padding-lr);
 		--font-size-h2: 28px;
 		--font-size-h1: 30vmin;
 		--line-height-h1: 70px;
+		--padding-tb: 80px;
+		--padding-lr: 50px;
 	}
 	p{
 		--font-size-p: 20px;
@@ -308,8 +314,7 @@ a:hover {
 			--quote-height:550px;
 			}
 	}
-
-}	
+	
 
 
 
@@ -318,14 +323,16 @@ a:hover {
 	
 	.container{
 		flex-direction: row;
-		padding: 80px 50px;
+		--header-padding-tb: 80px;
+		--header-padding-lr: 50px;
 	}
 	.container_main{
 		flex-direction: row;
-		padding: 80px 50px;
 		--font-size-h2: 28px;
 		--font-size-h1: 176px;
 		--line-height-h1: 70px;
+		--header-padding-tb: 80px;
+		--header-padding-lr: 50px;
 
 	}
 	p{
