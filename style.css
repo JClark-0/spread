@@ -101,7 +101,7 @@ nav > ul{
 	gap: 20px;
 	color:black;
 	position: fixed;
-	width: 100%;
+	/*width: 100%;*/	
 	padding: 1em;
 	z-index: 2;
 }
@@ -221,9 +221,9 @@ blockquote{
 
 	}
 	/*flex box for desktop view of quotes (might need to change to grid) */
-	.quote{
-	/*definitely need something but don't know what for now*/	
-	} 
+	/*.quote{
+	definitely need something but don't know what for now
+	} */	
 }
 /*background colors*/
 .green{
