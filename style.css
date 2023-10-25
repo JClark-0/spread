@@ -181,6 +181,9 @@ h2{
 	line-height: 140%;
 	max-width: 500px;
 }
+.main-h2{
+	padding-top:40px;
+}
 /* all about quote */
 .quote{
 	/*im not sure if flex would work here? might have to use a grid instead? */
@@ -221,17 +224,19 @@ blockquote{
 .quotelayout1{
 	position: var(--quote-position-1);
 	left: var(--quote-left-1);
+	margin: 0 auto;
 }
 .quotelayout2{
 	position: var(--quote-position-2);
 	left: var(--quote-left-2);
 	top: var(--quote-top-2);
-
+	margin: 0 auto;
 }
 .quotelayout3{
 	position: var(--quote-position-3);
 	left: var(--quote-left-3);
 	top: var(--quote-top-3);
+	margin: 0 auto;
 }
 
 /* Styles of links that are not within the article */
@@ -321,10 +326,10 @@ a:hover {
 	--quote-position-1: relative;
 	--quote-position-2: relative;
 	--quote-position-3: relative;
-	--quote-left-1: 20vmin;
-	--quote-left-2: 5vmin;
+	--quote-left-1: -6vmax;
+	--quote-left-2: -15vmax;
 	--quote-top-2: -5vmin;
-	--quote-left-3: 55vmin;
+	--quote-left-3: 13vmax;
 	--quote-top-3: -15vmin;
 	}
 }
