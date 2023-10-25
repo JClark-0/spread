@@ -111,7 +111,7 @@ h1{
 	text-align: center;
 }
 
-/* star of the main font */
+/* start of the main font */
 .c{
 	font: 180px 'pencerio', san-serif;
 	-webkit-text-stroke: 2px #1B4933;
@@ -222,9 +222,9 @@ blockquote{
 
 	}
 	/*flex box for desktop view of quotes (might need to change to grid) */
-	.quote{
-	/*definitely need something but don't know what for now*/	
-	}
+	/*.quote{
+	definitely need something but don't know what for now
+	}*/	
 }
 /*background colors*/
 .green{
