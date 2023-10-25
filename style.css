@@ -79,11 +79,14 @@ html{
 
 
 body{
+	position: relative;
 	background-color: #F0F0E2;
 	color: #232426;
 }
 
 header {
+	position: absolute;
+    width: 100%;
 	max-width: 70em;
 	min-width:35em;
 	margin-left: auto;
@@ -91,7 +94,9 @@ header {
 }
 
 main {
-	width: 100%;
+	position: absolute;
+    width: 100%;
+
 }
 
 /* Top navigation poistion and style */
