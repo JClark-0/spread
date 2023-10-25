@@ -41,6 +41,7 @@
 
 :root {
 	--font-size-h2: 24px;
+	--font-size-h1: 30vmin;
 }
 
 html{
@@ -102,57 +103,48 @@ nav > ul{
 }
 
 h1{
-	font-size: 200px;
 	display: flex;
 	flex-direction: column;
 	line-height: 140px;
 	padding-bottom:48px;
 	color:#1B4933;
 	text-align: center;
+	border: #1B4933 solid	10px;
 }
 
 /* star of the main font */
 .c{
-	font: 180px 'pencerio', san-serif;
+	font: var(--font-size-h1) 'pencerio', san-serif;
 	-webkit-text-stroke: 2px #1B4933;
 	line-height: 1px; /*I want to */
 }
 .ul{
-	font: 160px 'boxing', serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'boxing', serif;
 }
 .t1{
-	font: 130px 'framespartone', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'framespartone', san-serif;
 }
 .o{
-	font: 180px 'Rubik Beastly', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'Rubik Beastly', san-serif;
 }
 .f{
-	font: 160px 'Rubik Puddles', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'Rubik Puddles', san-serif;
 }
 .t2{
-	font: 200px 'Aktura', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'Aktura', san-serif;
 }
 .h{
-	font: 200px 'astloch', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'astloch', san-serif;
 }
 .u{
-	font: 170px 'comico', san-serif;
-	line-height: 100px;
+	font: var(--font-size-h1) 'comico', san-serif;
 }
 .gl{
-	font: 180px 'crimson', san-serif;
+	font: var(--font-size-h1) 'crimson', san-serif;
 	font-style: italic;
-	line-height: 100px;
 }
 .y{
-	font: 140px '0xa000', san-serif;
-	line-height: 100px;	
+	font: var(--font-size-h1) '0xa000', san-serif;
 }
 /* end of the main font */
 
@@ -193,6 +185,7 @@ blockquote{
 	font: 20px 'EB Garamond', serif;
 	font-weight: 500;
 	font-style: italic;
+	flex-grow: 1;
 }
 .quotetitle{
 	border: 2px dotted #1B4933;
@@ -211,20 +204,22 @@ blockquote{
 	padding-bottom: 24px;
 }
 
-@media(min-width: 800px) { 
+@media(min-width: 375px) { 
+	
 	.container{
 		flex-direction: row;
 	}
 	.container_main{
 		flex-direction: row;
 		--font-size-h2: 28px;
+		--font-size-h1: 128px;
 		border: 10px solid palegoldenrod;
 
 	}
 	/*flex box for desktop view of quotes (might need to change to grid) */
 	.quote{
 	/*definitely need something but don't know what for now*/	
-	}
+	} 
 }
 /*background colors*/
 .green{
