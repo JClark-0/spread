@@ -72,13 +72,11 @@ html{
 	flex-grow: 1;
 	max-width: 500px;
 	padding-right: 20px;
-	border: 10px solid rosybrown;
 }
 .two{
 	flex-basis: 60%;
 	flex-grow: 2;
 	max-width: 500px;
-	border: 10px solid palegoldenrod;
 }
 
 
@@ -184,7 +182,7 @@ h2{
 	/*im not sure if flex would work here? might have to use a grid instead? */
 	display: flex;
 	flex-direction: column;
-	padding:  40px 50px;
+	padding:  40px 50px 0px;
 	background-color: white;
 	align-items: center;	
 	flex-grow: 1;
@@ -194,6 +192,7 @@ blockquote{
 	font-weight: 500;
 	font-style: italic;
 	flex-grow: 1;
+	padding-top: 20px;
 }
 .quotetitle{
 	border: 2px dotted #1B4933;
@@ -202,6 +201,7 @@ blockquote{
 	line-height: 100px;
 	max-height: 100px;
 	text-align: center;
+	margin: 20px 0px;
 }
 .quotecontent{
 	max-width: 500px;
