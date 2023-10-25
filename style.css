@@ -297,8 +297,16 @@ a:hover {
 		--font-size-h3:24px;
 	}
 	.quote{
-		--quote-top-2:0px;
-		--quote-top-3:0px;
+			--quote-position-1: relative;
+			--quote-position-2: relative;
+			--quote-position-3: relative;
+			--quote-left-1: -6vmax;
+			--quote-left-2: -15vmax;
+			--quote-top-2: -5vmin;
+			--quote-left-3: 13vmax;
+			--quote-top-3: -15vmin;
+			--quote-height:550px;
+			}
 	}
 
 }	
