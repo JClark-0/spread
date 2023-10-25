@@ -52,14 +52,14 @@ html{
 	flex-direction: column;
 	flex-basis: 0px;
 	gap: 3em;
-	padding: 80px 50px;
+	padding: 40px 25px;
 	/*border: 10px red solid;*/
 }
 .container{
 	display: flex;
 	flex-direction: column;
 	gap: 3em;
-	padding: 80px 50px;
+	padding: 40px 25px;
 	justify-content: center;
 }
 
@@ -84,7 +84,6 @@ body{
 }
 
 header {
-
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -210,9 +209,11 @@ blockquote{
 	
 	.container{
 		flex-direction: row;
+		padding: 80px 50px;
 	}
 	.container_main{
 		flex-direction: row;
+		padding: 80px 50px;
 		--font-size-h2: 28px;
 		--font-size-h1: 128px;
 		border: 10px solid palegoldenrod;
