@@ -192,7 +192,8 @@ blockquote{
 	font-weight: 500;
 	font-style: italic;
 	flex-grow: 1;
-	padding-top: 20px;
+	height: 100%;
+	/* border: #1B4933 solid 10px; */
 }
 .quotetitle{
 	border: 2px dotted #1B4933;
@@ -208,9 +209,49 @@ blockquote{
 }
 .quoteinfo{
 	font: 16px 'EB Garamond', serif;
-	font-weight: 400;
+	font-weight: 600;
+	padding-top: 12px;
 	padding-bottom: 24px;
 }
+
+/* Styles of links that are not within the article */
+a:not(.link) {
+	font: 18px 'inter', san-serif;
+	font-weight: 400;
+}
+.link-position-1{
+	top: 30px;
+	right: 30px;
+}
+.link-position-2{
+	top: 120px;
+	left: 180px;
+}
+.link-position-3{
+	top: 70px;
+	left: -80px;
+}
+
+/* Styles of links within article */
+.link {
+	/* position: absolute; [leaving out for now] */
+	display:block;
+	left: 5px;
+	opacity: 10%;
+	font: 34px 'inter', san-serif;
+	font-style: italic;
+	font-weight: 600;
+	position: relative;
+}
+
+/* Hover style for all links */
+a:hover {
+	color: #1B4933; 
+	opacity: 100%;
+}
+
+
+
 @media(min-width: 375px) and (max-width: 767px){ 
 	
 	.container{
@@ -235,7 +276,9 @@ blockquote{
 	definitely need something but don't know what for now
 	} */	
 }
-/* for tablet */
+
+
+/* for column */
 @media(min-width: 768px) { 
 	
 	.container{
@@ -311,30 +354,6 @@ a[href^='https://']::after {
 	right: 0;
 	margin:1em;
 	z-index: 2;
-}
-
-/* Styles of links that are not within the article */
-a:not(.link) {
-	font: 18px 'inter', san-serif;
-	font-weight: 400;
-	z-index: 1;
-}
-
-/* Styles of links within article */
-.link {
-	/* position: absolute; [leaving out for now] */
-	display:block;
-	left: 5px;
-	opacity: 20%;
-	font: 34px 'inter', san-serif;
-	font-style: italic;
-	font-weight: 600;
-}
-
-/* Hover style for all links */
-a:hover {
-	color: #1B4933; 
-	opacity: 100%;
 }
 
 /* Only Bullet points */
