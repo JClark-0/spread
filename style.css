@@ -90,6 +90,10 @@ header {
 	margin-right: auto;
 }
 
+main {
+	width: 100%;
+}
+
 /* Top navigation poistion and style */
 nav > ul{
 	display: flex;
@@ -112,7 +116,7 @@ h1{
 	border: #1B4933 solid	10px;
 }
 
-/* star of the main font */
+/* start of the main font */
 .c{
 	font: var(--font-size-h1) 'pencerio', san-serif;
 	-webkit-text-stroke: 2px #1B4933;
