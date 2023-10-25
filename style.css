@@ -44,6 +44,7 @@
 	--font-size-h2: 24px;
 	--font-size-h3: 18px;
 	--font-size-p:18px;
+	--line-height-h1: 10vmin;
 }
 
 html{
@@ -55,6 +56,7 @@ html{
 	flex-basis: 0px;
 	gap: 3em;
 	padding: 40px 25px;
+	justify-content: center;
 	/*border: 10px red solid;*/
 }
 .container{
@@ -106,18 +108,15 @@ nav > ul{
 h1{
 	display: flex;
 	flex-direction: column;
-	line-height: 140px;
-	padding-bottom:48px;
+	line-height: var(--font-size-h1);
 	color:#1B4933;
 	text-align: center;
-	border: #1B4933 solid	10px;
 }
 
 /* start of the main font */
 .c{
 	font: var(--font-size-h1) 'pencerio', san-serif;
 	-webkit-text-stroke: 2px #1B4933;
-	line-height: 1px; /*I want to */
 }
 .ul{
 	font: var(--font-size-h1) 'boxing', serif;
@@ -127,25 +126,32 @@ h1{
 }
 .o{
 	font: var(--font-size-h1) 'Rubik Beastly', san-serif;
+	line-height: var(--line-height-h1);
 }
 .f{
 	font: var(--font-size-h1) 'Rubik Puddles', san-serif;
+	line-height: var(--line-height-h1);
 }
 .t2{
 	font: var(--font-size-h1) 'Aktura', san-serif;
+	line-height: var(--line-height-h1);
 }
 .h{
 	font: var(--font-size-h1) 'astloch', san-serif;
+	line-height: var(--line-height-h1);
 }
 .u{
 	font: var(--font-size-h1) 'comico', san-serif;
+	line-height: var(--line-height-h1);
 }
 .gl{
 	font: var(--font-size-h1) 'crimson', san-serif;
 	font-style: italic;
+	line-height: var(--line-height-h1);
 }
 .y{
 	font: var(--font-size-h1) '0xa000', san-serif;
+	line-height: var(--line-height-h1);
 }
 /* end of the main font */
 
@@ -181,7 +187,6 @@ h2{
 	padding:  40px 50px;
 	background-color: white;
 	align-items: center;	
-	border: #1B4933 solid 10px;
 	flex-grow: 1;
 }
 blockquote{
@@ -193,7 +198,7 @@ blockquote{
 .quotetitle{
 	border: 2px dotted #1B4933;
 	border-radius: 50%;
-	width: 400px;
+	width: 300px;
 	line-height: 100px;
 	max-height: 100px;
 	text-align: center;
@@ -206,8 +211,32 @@ blockquote{
 	font-weight: 400;
 	padding-bottom: 24px;
 }
-
-@media(min-width: 600px) { 
+@media(min-width: 375px) and (max-width: 767px){ 
+	
+	.container{
+		flex-direction: column;
+		padding: 80px 50px;
+	}
+	.container_main{
+		flex-direction: column;
+		padding: 80px 50px;
+		--font-size-h2: 28px;
+		--font-size-h1: 30vmin;
+		--line-height-h1: 70px;
+	}
+	p{
+		--font-size-p: 20px;
+	}
+	h3{
+		--font-size-h3:24px;
+	}
+	/*flex box for desktop view of quotes (might need to change to grid) */
+	/*.quote{
+	definitely need something but don't know what for now
+	} */	
+}
+/* for tablet */
+@media(min-width: 768px) { 
 	
 	.container{
 		flex-direction: row;
@@ -218,7 +247,7 @@ blockquote{
 		padding: 80px 50px;
 		--font-size-h2: 28px;
 		--font-size-h1: 128px;
-		border: 10px solid palegoldenrod;
+		--line-height-h1: 70px;
 	}
 	p{
 		--font-size-p: 20px;
