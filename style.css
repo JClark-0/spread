@@ -85,7 +85,7 @@ html{
 	}
 	.container_main{
 		flex-direction: row;
-		--font-size-h2: 36px;
+		--font-size-h2: 28px;
 	
 	}
 
@@ -99,8 +99,8 @@ html{
 .beige{
 	background-color: #E0D1B2;
 }
-.lightgreen{
-	background-color: #F0F0E2;
+.white{
+	background-color: white;
 }
 
 
@@ -132,17 +132,18 @@ h1{
 	font-size: 200px;
 	display: flex;
 	flex-direction: column;
-	line-height: 120px;
+	line-height: 140px;
 	padding-top: 48px;
 	padding-bottom:48px;
+	color:#1B4933;
 	text-align: center;
 }
 
 /* star of the main font */
 .c{
 	font: 180px 'pencerio', san-serif;
-	-webkit-text-stroke: 2px black;
-	line-height: 120px; /*I want to */
+	-webkit-text-stroke: 2px #1B4933;
+	line-height: 1px; /*I want to */
 }
 .ul{
 	font: 160px 'boxing', serif;
@@ -231,7 +232,9 @@ a[href^='https://']::after {
 /* Floating back to top button */
 #topButton {
 	position: fixed;
-	background-color:rgb(3, 28, 3);
+	font: 40px 'EB Garamond', serif;
+	font-weight: 400;
+	font-style:italic;
 	padding: 4%;
 	border-radius: 50%;
 	bottom: 0;
@@ -260,7 +263,7 @@ a:not(.link) {
 
 /* Hover style for all links */
 a:hover {
-	color: rgb(74, 242, 74); 
+	color: #1F522D; 
 	opacity: 100%;
 }
 
