@@ -45,6 +45,10 @@
 	--font-size-h3: 18px;
 	--font-size-p:18px;
 	--line-height-h1: 10vmin;
+	--quote-position-1: static;
+	--quote-position-2: static;
+	--quote-position-3: static;
+
 }
 
 html{
@@ -180,20 +184,22 @@ h2{
 /* all about quote */
 .quote{
 	/*im not sure if flex would work here? might have to use a grid instead? */
-	display: flex;
-	flex-direction: column;
+	/* display: flex;
+	align-items: center;
+	flex-grow: 1;
+	flex-direction: column; */
 	padding:  40px 50px 0px;
 	background-color: white;
-	align-items: center;	
-	flex-grow: 1;
+	width: 100%;
 }
 blockquote{
 	font: 20px 'EB Garamond', serif;
 	font-weight: 500;
 	font-style: italic;
 	flex-grow: 1;
+	width: 400px;
 	height: 100%;
-	/* border: #1B4933 solid 10px; */
+	border: #1B4933 solid 10px;
 }
 .quotetitle{
 	border: 2px dotted #1B4933;
@@ -202,16 +208,31 @@ blockquote{
 	line-height: 100px;
 	max-height: 100px;
 	text-align: center;
-	margin: 20px 0px;
+	margin: 0 auto;
 }
 .quotecontent{
-	max-width: 500px;
+	max-width: 400px;
 }
 .quoteinfo{
 	font: 16px 'EB Garamond', serif;
 	font-weight: 600;
 	padding-top: 12px;
 	padding-bottom: 24px;
+}
+.quotelayout1{
+	position: var(--quote-position-1);
+	left: var(--quote-left-1);
+}
+.quotelayout2{
+	position: var(--quote-position-2);
+	left: var(--quote-left-2);
+	top: var(--quote-top-2);
+
+}
+.quotelayout3{
+	position: var(--quote-position-3);
+	left: var(--quote-left-3);
+	top: var(--quote-top-3);
 }
 
 /* Styles of links that are not within the article */
@@ -272,10 +293,9 @@ a:hover {
 		--font-size-h3:24px;
 	}
 	/*flex box for desktop view of quotes (might need to change to grid) */
-	/*.quote{
-	definitely need something but don't know what for now
-	} */	
-}
+
+}	
+
 
 
 /* for column */
@@ -298,10 +318,16 @@ a:hover {
 	h3{
 		--font-size-h3:24px;
 	}
-	/*flex box for desktop view of quotes (might need to change to grid) */
-	/*.quote{
-	definitely need something but don't know what for now
-	} */	
+	.quote{
+	--quote-position-1: relative;
+	--quote-position-2: relative;
+	--quote-position-3: relative;
+	--quote-left-1: 20vmin;
+	--quote-left-2: 5vmin;
+	--quote-top-2: -5vmin;
+	--quote-left-3: 55vmin;
+	--quote-top-3: -15vmin;
+	}
 }
 /*background colors*/
 .green{
