@@ -402,6 +402,7 @@ marquee {
 
 footer {
 	background-color: rgb(3, 28, 3);
-	color:white; 
+	color:rgba(255, 255, 255, 0.5); 
 	padding: 2em;
+    font: 14px 'inter', san-serif;
 }
