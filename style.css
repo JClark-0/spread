@@ -62,7 +62,7 @@ html{
 	flex-basis: 0px;
 	gap: 3em;
 	padding: var(--padding-tb) var(--padding-lr);
-	justify-content: center;
+	justify-content: left;
 	
 }
 .container{
@@ -92,8 +92,7 @@ body{
 }
 
 header {
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 
@@ -164,7 +163,7 @@ h1{
 	font: 16px 'inter', san-serif;
 	font-weight: 600;
 	padding-top: 16px;
-	margin-top: 120px;
+	margin-top: 12px;
 }
 
 
@@ -181,9 +180,7 @@ h2{
 	font: var(--size-h2) 'inter', san-serif;
 	font-weight: 500;
 	line-height: 140%;
-	max-width: 90%;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 .main-h2{
 	padding-top:40px;
