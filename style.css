@@ -57,10 +57,9 @@ html{
 	scroll-behavior: smooth;
 }
 .container_main{
-	display: flex;
-	flex-direction: column;
-	flex-basis: 0px;
-	gap: 3em;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 450px);
+	gap: 100px;
 	padding: var(--padding-tb) var(--padding-lr);
 	justify-content: left;
 	
@@ -91,9 +90,7 @@ body{
 	color: #232426;
 }
 
-header {
 
-}
 
 
 /* Top navigation poistion and style */
