@@ -40,18 +40,17 @@
 
 
 :root {
-	--font-size-h1: 30vmin;
-	--font-size-h2: 20px;
-	--font-size-h3: 18px;
-	--font-size-p:18px;
+	--base-type: 15px;
+	--size-h1: 30vmin;
 	--line-height-h1: 10vmin;
+	--size-h2: calc(1.5 * var(--base-type));
+	--size-h3: calc(1 * var(--base-type));;
 	--quote-position-1: static;
 	--quote-position-2: static;
 	--quote-position-3: static;
 	--quote-height: 80%;
 	--padding-tb: 40px;
 	--padding-lr: 16px;
-	
 }
 
 html{
@@ -64,7 +63,7 @@ html{
 	gap: 3em;
 	padding: var(--padding-tb) var(--padding-lr);
 	justify-content: center;
-	/*border: 10px red solid;*/
+	
 }
 .container{
 	display: flex;
@@ -113,49 +112,49 @@ nav > ul{
 h1{
 	display: flex;
 	flex-direction: column;
-	line-height: var(--font-size-h1);
+	line-height: var(--line-height-h1);
 	color:#1B4933;
 	text-align: center;
 }
 
 /* start of the main font */
 .c{
-	font: var(--font-size-h1) 'pencerio', san-serif;
+	font: var(--size-h1) 'pencerio', san-serif;
 	-webkit-text-stroke: 2px #1B4933;
 }
 .ul{
-	font: var(--font-size-h1) 'boxing', serif;
+	font: var(--size-h1) 'boxing', serif;
 }
 .t1{
-	font: var(--font-size-h1) 'framespartone', san-serif;
+	font: var(--size-h1) 'framespartone', san-serif;
 }
 .o{
-	font: var(--font-size-h1) 'Rubik Beastly', san-serif;
+	font: var(--size-h1) 'Rubik Beastly', san-serif;
 	line-height: var(--line-height-h1);
 }
 .f{
-	font: var(--font-size-h1) 'Rubik Puddles', san-serif;
+	font: var(--size-h1) 'Rubik Puddles', san-serif;
 	line-height: var(--line-height-h1);
 }
 .t2{
-	font: var(--font-size-h1) 'Aktura', san-serif;
+	font: var(--size-h1) 'Aktura', san-serif;
 	line-height: var(--line-height-h1);
 }
 .h{
-	font: var(--font-size-h1) 'astloch', san-serif;
+	font: var(--size-h1) 'astloch', san-serif;
 	line-height: var(--line-height-h1);
 }
 .u{
-	font: var(--font-size-h1) 'comico', san-serif;
+	font: var(--size-h1) 'comico', san-serif;
 	line-height: var(--line-height-h1);
 }
 .gl{
-	font: var(--font-size-h1) 'crimson', san-serif;
+	font: var(--size-h1) 'crimson', san-serif;
 	font-style: italic;
 	line-height: var(--line-height-h1);
 }
 .y{
-	font: var(--font-size-h1) '0xa000', san-serif;
+	font: var(--size-h1) '0xa000', san-serif;
 	line-height: var(--line-height-h1);
 }
 /* end of the main font */
@@ -179,7 +178,7 @@ h1{
 
 
 h2{
-	font: var(--font-size-h2) 'inter', san-serif;
+	font: var(--size-h2) 'inter', san-serif;
 	font-weight: 500;
 	line-height: 140%;
 	max-width: 500px;
@@ -189,7 +188,6 @@ h2{
 }
 /* all about quote */
 .quote{
-	/*im not sure if flex would work here? might have to use a grid instead? */
 	/* display: flex;
 	align-items: center;
 	flex-grow: 1;
@@ -210,7 +208,7 @@ blockquote{
 .quotetitle{
 	border: 2px dotted #1B4933;
 	border-radius: 50%;
-	width: 300px;
+	width: 20vmax;
 	line-height: 100px;
 	max-height: 100px;
 	text-align: center;
@@ -244,7 +242,7 @@ blockquote{
 
 /* Styles of links that are not within the article */
 a:not(.link) {
-	font: 18px 'inter', san-serif;
+	font: var(--base-type)'inter', san-serif;
 	font-weight: 400;
 }
 .link-position-1{
@@ -267,7 +265,7 @@ a:not(.link) {
 	left: 5px;
 	mix-blend-mode: difference;
 	opacity: 50%;
-	font: 34px 'inter', san-serif;
+	font: 32px 'inter', san-serif;
 	font-style: italic;
 	font-weight: 600;
 	position: relative;
@@ -288,30 +286,16 @@ a:hover:not(.link) {
 
 @media(min-width: 375px) and (max-width: 899px){ 
 	
-	.container{
-		flex-direction: column;
-		--padding-tb: 40px;
+	:root {
+		--base-type: 16px;
+		--padding-tb: 60px;
 		--padding-lr: 16px;
 	}
-	.container_main{
-		flex-direction: column;
-		padding: var(--padding-tb) var(--padding-lr);
-		--font-size-h2: 28px;
-		--font-size-h1: 30vmin;
-		--line-height-h1: 70px;
-		--padding-tb: 40px;
-		--padding-lr: 16px;
-	}
-	p{
-		--font-size-p: 20px;
-	}
-	h3{
-		--font-size-h3:24px;
-	}
+	
 	.quote{
-			--quote-position-1: relative;
-			--quote-position-2: relative;
-			--quote-position-3: relative;
+			--quote-position-1: static;
+			--quote-position-2: static;
+			--quote-position-3: static;
 			--quote-left-1: -6vmax;
 			--quote-left-2: -15vmax;
 			--quote-top-2: -5vmin;
@@ -320,32 +304,22 @@ a:hover:not(.link) {
 			--quote-height:550px;
 			}
 	}
-	
 
-
-
-/* for column */
 @media(min-width: 900px) { 
-	
+
+	:root {
+		--base-type: 20px;
+		--size-h1: 176px;
+		--line-height-h1: 70px;
+
+		--padding-tb: 80px;
+		--padding-lr: 50px;
+	}
 	.container{
 		flex-direction: row;
-		--header-padding-tb: 80px;
-		--header-padding-lr: 50px;
 	}
 	.container_main{
 		flex-direction: row;
-		--font-size-h2: 28px;
-		--font-size-h1: 176px;
-		--line-height-h1: 70px;
-		--header-padding-tb: 80px;
-		--header-padding-lr: 50px;
-
-	}
-	p{
-		--font-size-p: 20px;
-	}
-	h3{
-		--font-size-h3:24px;
 	}
 	.quote{
 	--quote-position-1: relative;
@@ -359,6 +333,7 @@ a:hover:not(.link) {
 	--quote-height:550px;
 	}
 }
+
 /*background colors*/
 .green{
 	background-color: #1B4933;
@@ -377,14 +352,14 @@ a:hover:not(.link) {
 
 
 h3{
-	font: var(--font-size-h3) 'inter', san-serif;
+	font: var(--size-h3) 'inter', san-serif;
 	font-weight: 600;
 	line-height: 150%;
 	z-index: 1;
 
 }
 p, ul {
-    font: var(--font-size-p) 'inter', san-serif;
+    font: var(--base-type) 'inter', san-serif;
 	font-weight: 400;
 	line-height: 160%;
 	padding-bottom: 10px;
@@ -430,5 +405,5 @@ footer {
 	background-color: rgb(3, 28, 3);
 	color:rgba(255, 255, 255, 0.5); 
 	padding: 2em;
-    font: 14px 'inter', san-serif;
+    font: var(--base-type) 'inter', san-serif;
 }
