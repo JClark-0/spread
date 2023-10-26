@@ -265,20 +265,26 @@ a:not(.link) {
 	/* position: absolute; [leaving out for now] */
 	display:block;
 	left: 5px;
-	opacity: 10%;
+	mix-blend-mode: difference;
+	opacity: 50%;
 	font: 34px 'inter', san-serif;
 	font-style: italic;
 	font-weight: 600;
 	position: relative;
 }
 
-/* Hover style for all links */
-a:hover {
-	color: #1B4933; 
+/* Hover style for article links */
+a.link:hover {
+	mix-blend-mode: multiply;
 	opacity: 100%;
 }
 
-
+/* Hover style for all other links */
+a:hover:not(.link) {
+	mix-blend-mode: normal;
+	color: rgb(83, 83, 83);
+	opacity: 100%;
+}
 
 @media(min-width: 375px) and (max-width: 899px){ 
 	
