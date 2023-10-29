@@ -41,8 +41,8 @@
 
 :root {
 	--base-type: 15px;
-	--size-h1: 30vmin;
-	--line-height-h1: 10vmin;
+	--size-h1: 112px;
+	--line-height-h1: 45px;
 	--size-h2: calc(1.5 * var(--base-type));
 	--size-h3: calc(1 * var(--base-type));;
 	--quote-position-1: static;
@@ -51,6 +51,63 @@
 	--quote-height: 80%;
 	--padding-tb: 40px;
 	--padding-lr: 16px;
+}
+
+@media(min-width: 375px) and (max-width: 899px){ 
+	
+	:root {
+		--base-type: 18px;
+		--padding-tb: 60px;
+		--padding-lr: 16px;
+		--size-h1: max(20vmin,112px);
+		--line-height-h1: max(8vmin,45px);
+
+
+	}
+	
+	.quote{
+			--quote-position-1: static;
+			--quote-position-2: static;
+			--quote-position-3: static;
+			--quote-left-1: -6vmax;
+			--quote-left-2: -15vmax;
+			--quote-top-2: -5vmin;
+			--quote-left-3: 13vmax;
+			--quote-top-3: -15vmin;
+			--quote-height:550px;	
+			}
+	}
+
+@media(min-width: 900px) { 
+
+	:root {
+		--base-type: 20px;
+		--size-h1: 176px;
+		--line-height-h1: 70px;
+
+		--header-padding-top: 30px;
+		--header-padding-bottom: 100px;
+		--header-padding-lr: 50px;
+		--padding-tb: 60px;
+		--padding-lr: 50px;
+	}
+	.container{
+		flex-direction: row;
+	}
+	.container_main{
+		flex-direction: row;
+	}
+	.quote{
+	--quote-position-1: relative;
+	--quote-position-2: relative;
+	--quote-position-3: relative;
+	--quote-left-1: -6vmax;
+	--quote-left-2: -15vmax;
+	--quote-top-2: -5vmin;
+	--quote-left-3: 13vmax;
+	--quote-top-3: -15vmin;
+	--quote-height:550px;
+	}
 }
 
 html{
@@ -281,59 +338,6 @@ a:hover:not(.link) {
 	mix-blend-mode: normal;
 	color: rgb(83, 83, 83);
 	opacity: 100%;
-}
-
-@media(min-width: 375px) and (max-width: 899px){ 
-	
-	:root {
-		--base-type: 16px;
-		--padding-tb: 60px;
-		--padding-lr: 16px;
-	}
-	
-	.quote{
-			--quote-position-1: static;
-			--quote-position-2: static;
-			--quote-position-3: static;
-			--quote-left-1: -6vmax;
-			--quote-left-2: -15vmax;
-			--quote-top-2: -5vmin;
-			--quote-left-3: 13vmax;
-			--quote-top-3: -15vmin;
-			--quote-height:550px;	
-			}
-	}
-
-@media(min-width: 900px) { 
-
-	:root {
-		--base-type: 20px;
-		--size-h1: 176px;
-		--line-height-h1: 70px;
-
-		--header-padding-top: 30px;
-		--header-padding-bottom: 100px;
-		--header-padding-lr: 50px;
-		--padding-tb: 60px;
-		--padding-lr: 50px;
-	}
-	.container{
-		flex-direction: row;
-	}
-	.container_main{
-		flex-direction: row;
-	}
-	.quote{
-	--quote-position-1: relative;
-	--quote-position-2: relative;
-	--quote-position-3: relative;
-	--quote-left-1: -6vmax;
-	--quote-left-2: -15vmax;
-	--quote-top-2: -5vmin;
-	--quote-left-3: 13vmax;
-	--quote-top-3: -15vmin;
-	--quote-height:550px;
-	}
 }
 
 /*background colors*/
