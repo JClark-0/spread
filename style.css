@@ -98,7 +98,7 @@
 	
 		--header-padding-lr: calc(2 * var(--base-type));
 		--header-padding-bottom: calc(3 * var(--base-type));
-		--grid-column: 1fr 1fr;
+		--grid-column: repeat(auto-fill, 450px);
 
 
 		--padding-tb: 60px;
