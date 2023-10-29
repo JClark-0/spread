@@ -40,11 +40,20 @@
 
 
 :root {
-	--base-type: 15px;
-	--size-h1: 112px;
-	--line-height-h1: 45px;
+	--base-type: 16px;
+	--size-h1: max(20vmin,112px);
+	--line-height-h1: max(8vmin,45px);
 	--size-h2: calc(1.5 * var(--base-type));
 	--size-h3: calc(1 * var(--base-type));;
+	/* for h1+h2+infor */
+	--header-padding-top: calc(2 * var(--base-type));
+	--header-padding-bottom: calc(5 * var(--base-type));
+	--header-padding-lr: var(--base-type);
+	--grid-column: 1fr;
+
+	--padding-h1-right: 20px ;
+	--padding-h1-bottom: 0px;
+
 	--quote-position-1: static;
 	--quote-position-2: static;
 	--quote-position-3: static;
@@ -61,10 +70,12 @@
 		--padding-lr: 16px;
 		--size-h1: max(20vmin,112px);
 		--line-height-h1: max(8vmin,45px);
-
-
 	}
 	
+	.container_main{
+		/* grid-template-columns: 1fr 1fr; */
+	}
+
 	.quote{
 			--quote-position-1: static;
 			--quote-position-2: static;
@@ -84,18 +95,20 @@
 		--base-type: 20px;
 		--size-h1: 176px;
 		--line-height-h1: 70px;
+	
+		--header-padding-lr: calc(2 * var(--base-type));
+		--header-padding-bottom: calc(3 * var(--base-type));
+		--grid-column: 1fr 1fr;
 
-		--header-padding-top: 30px;
-		--header-padding-bottom: 100px;
-		--header-padding-lr: 50px;
+
 		--padding-tb: 60px;
 		--padding-lr: 50px;
 	}
 	.container{
-		flex-direction: row;
+		/* flex-direction: row; */
 	}
 	.container_main{
-		flex-direction: row;
+		/* grid-template-columns: 1fr 2fr; */
 	}
 	.quote{
 	--quote-position-1: relative;
@@ -106,16 +119,16 @@
 	--quote-top-2: -5vmin;
 	--quote-left-3: 13vmax;
 	--quote-top-3: -15vmin;
-	--quote-height:550px;
+	--quote-height: 550px;
 	}
 }
 
 html{
-	scroll-behavior: smooth;
+	scroll-behavior: smooth;	
 }
 .container_main{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 450px);
+	grid-template-columns: var(--grid-column);
 	gap: 100px;
 	justify-content: left;
 	padding: var(--header-padding-top) var(--header-padding-lr) var(--header-padding-bottom) var(--header-padding-lr);
@@ -170,7 +183,8 @@ h1{
 	line-height: var(--line-height-h1);
 	color:#1B4933;
 	text-align: center;
-
+	padding-bottom: var(--padding-h1-right);
+	padding-right:	var(--padding-h1-bottom);
 }
 
 /* start of the main font */
