@@ -45,7 +45,7 @@ html{
 .container_main{
 	display: grid;
 	grid-template-columns: var(--grid-column);
-	gap: 100px;
+	gap: calc(.3 * var(--size-h1));
 	justify-content: left;
 	padding: var(--header-padding-top) var(--header-padding-lr) var(--header-padding-bottom) var(--header-padding-lr);
 }
@@ -376,6 +376,8 @@ footer {
 		--padding-lr: 16px;
 		--size-h1: max(20vmin,112px);
 		--line-height-h1: max(8vmin,45px);
+		--grid-column: .8fr;
+
 	}
 	
 	.container_main{
