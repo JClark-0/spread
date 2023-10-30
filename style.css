@@ -44,33 +44,20 @@ html{
 }
 .container_main{
 	display: grid;
-	grid-template-columns: var(--grid-column);
-	gap: calc(.3 * var(--size-h1));
-	justify-content: left;
+	grid-auto-columns: var(--grid-column);
+	/* gap: calc(.3 * var(--size-h1)); */
+	justify-content: center;
+	width: 100%;
 	padding: var(--header-padding-top) var(--header-padding-lr) var(--header-padding-bottom) var(--header-padding-lr);
 }
 .container_main:last-child{
 	align-items: end;
 }
 .container{
-	display: flex;
-	flex-direction: column;
-	gap: 3em;
+
 	padding: var(--padding-tb) var(--padding-lr);
-	justify-content: center;
 }
 
-.one{
-	flex-basis: 40%;
-	flex-grow: 1;
-	max-width: 500px;
-	padding-right: 20px;
-}
-.two{
-	flex-basis: 60%;
-	flex-grow: 2;
-	max-width: 500px;
-}
 
 
 body{
@@ -220,6 +207,29 @@ blockquote{
 }
 
 
+.one{
+	max-width: 500px;
+	padding-right: 20px;
+	grid-column:1;
+	grid-row:1;	
+}
+.two{
+	max-width: 500px;
+	grid-column:2;
+	grid-row: 1;	
+}
+
+.three{
+	max-width: 500px;
+	padding-right: 20px;
+	grid-column:1;
+	grid-row:2;	
+}
+.four{
+	max-width: 500px;
+	grid-column:2;
+	grid-row: 2;	
+}
 
 /* Styles of links that are not within the article */
 a:not(.link) {
@@ -267,10 +277,18 @@ a:hover:not(.link) {
 
 /*background colors*/
 .green{
+	display: grid;
+	grid-template-columns: var(--grid-column);
+	gap: 3em;
+	
 	background-color: var(--green-background);
 	color: var(--white-foreground);
 }
 .beige{
+	display: grid;
+	grid-template-columns: var(--grid-column);
+	gap: 3em;
+	
 	background-color: var(--beige-background);
 }
 .white{
@@ -297,6 +315,7 @@ p, ul {
 	font-weight: 400;
 	line-height: 160%;
 	padding-bottom: 10px;
+	width: 100%;
 	z-index: 1;
 }
 
@@ -347,8 +366,8 @@ footer {
 	--base-type: 16px;
 	--size-h1: max(20vmin,112px);
 	--line-height-h1: max(8vmin,45px);
-	--size-h2: calc(1.5 * var(--base-type));
-	--size-h3: calc(1.3 * var(--base-type));;
+	--size-h2: calc(1.3 * var(--base-type));
+	--size-h3: calc(1.2 * var(--base-type));;
 	--blockquote-font-size: calc(1.1 * var(--base-type));
 	/* for h1+h2+infor */
 	--header-padding-top: calc(2 * var(--base-type));
@@ -362,7 +381,7 @@ footer {
 	--quote-position-1: static;
 	--quote-position-2: static;
 	--quote-position-3: static;
-	--quote-height: 80%;
+	
 	--padding-tb: 40px;
 	--padding-lr: 16px;
 
@@ -411,16 +430,12 @@ footer {
 	.two { 
 		max-width: 100%;
 		/*break-before: always; */
-		}
+	}
 	
 	h3, 
 	blockquote {
 	break-inside: avoid;
 	}
-
-
-
-	
 
 }
 
@@ -472,11 +487,12 @@ footer {
 		/* flex-direction: row; */
 	}
 	.container_main{
-		/* grid-template-columns: 1fr 2fr; */
+		grid-template-columns: 467px 367px;
+		width:100%;
 	}
 	.quote{
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4,1fr);
+		grid-auto-rows: minmax(50px, auto);
 		width:100% ;
 	/* --quote-position-1: relative;
 	--quote-position-2: relative;
@@ -488,30 +504,6 @@ footer {
 	--quote-top-3: -15vmin;
 	--quote-height: 550px; */
 	}
-		.quotelayout1{
-			grid-column: 1 / span 4;
-		}
-		.quotetitle{
-			grid-row: 2;
-			grid-column: 2 / span 3;
-		}
-		.quotelayout2{
-			grid-column:  1/ span 2;
-			align-self: end;
-			justify-self: end;
-		}
-		.quotelayout3{
-			grid-row: 3;
-			grid-column: 4;
-			align-self: end;
-			justify-self: end;
-		}
-		.quote-layout4{
-			grid-row: 4;
-			grid-column:  3/ span 2;
-			align-self: end;
-			justify-self: end;
-		}
 		.quotelayout1{
 			grid-column: 1 / span 4;
 		}
