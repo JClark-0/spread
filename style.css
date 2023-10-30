@@ -97,7 +97,7 @@ h1{
 	display: flex;
 	flex-direction: column;
 	line-height: var(--line-height-h1);
-	color:#1B4933;
+	color: var(--green-foreground);
 	text-align: center;
 	padding-bottom: var(--padding-h1-right);
 	padding-right:	var(--padding-h1-bottom);
@@ -106,7 +106,7 @@ h1{
 /* start of the main font */
 .c{
 	font: var(--size-h1) 'pencerio', san-serif;
-	-webkit-text-stroke: 2px #1B4933;
+	-webkit-text-stroke: 2px var(--green-foreground);
 }
 .ul{
 	font: var(--size-h1) 'boxing', serif;
@@ -178,7 +178,7 @@ h2{
 	grid-template-columns: repeat(auto-fill, 1fr);
 	row-gap: 20px;
 	padding:  10vmin 5vmax 0px;
-	background-color: white;
+	background-color: var(--white-background);
 	width: 100%;
 	/* max-height: var(--quote-height);Temporary solution */
 }
@@ -194,7 +194,7 @@ blockquote{
 	grid-column: 1;
 }
 .quotetitle{
-	border: 2px dotted #1B4933;
+	border: 2px dotted var(--green-foreground);
 	border-radius: 50%;
 	width: 20vmax;
 	line-height: 100px;
@@ -267,17 +267,17 @@ a:hover:not(.link) {
 
 /*background colors*/
 .green{
-	background-color: #1B4933;
-	color: white;
+	background-color: var(--green-background);
+	color: var(--white-foreground);
 }
 .beige{
-	background-color: #E0D1B2;
+	background-color: var(--beige-background);
 }
 .white{
-	background-color: white;
+	background-color: var(--white-background);
 }
 .lightgreen{
-	background-color: #F0F0E2;
+	background-color: var(--lightgreen-background);
 }
 .maxwidth{
 	max-width: 600px;
@@ -336,8 +336,8 @@ marquee {
 }
 
 footer {
-	background-color: rgb(3, 28, 3);
-	color:rgba(255, 255, 255, 0.5); 
+	background-color: var(--green-background);
+	color: var(--white-foreground); 
 	padding: 2em;
     font: var(--base-type) 'inter', san-serif;
 }
@@ -365,6 +365,63 @@ footer {
 	--quote-height: 80%;
 	--padding-tb: 40px;
 	--padding-lr: 16px;
+
+	--green-foreground: #1B4933;
+	--black-foreground: black; 
+	--white-foreground: white;
+	
+	--green-background: #1B4933;
+	--beige-background: #E0D1B2;
+	--white-background: white;
+	--lightgreen-background: #F0F0E2;
+}
+
+
+@media print {
+	:root { 
+	--green-foreground: black;
+	--white-foreground: black;
+	--green-background: white; 
+	--beige-background: white;
+	--lightgreen-background: white;
+
+	--base-type: 12px;
+	}
+
+	@page :first {
+		margin-top: 1cm;
+	}
+
+	@page {
+		margin-top: 2cm;
+	}
+
+	nav, 
+	.link,
+	#topButton,
+	footer {
+	display: none;
+	}
+
+	.one { 
+	max-width: 100%;
+	/*break-before: always; */
+	}
+
+	.two { 
+		max-width: 100%;
+		/*break-before: always; */
+		}
+	
+	h3, 
+	blockquote {
+	break-inside: avoid;
+	}
+
+
+
+	
+
 }
 
 @media(min-width: 376px) and (max-width: 899px){ 
@@ -407,7 +464,6 @@ footer {
 		--header-padding-lr: calc(2 * var(--base-type));
 		--header-padding-bottom: calc(3 * var(--base-type));
 		--grid-column: repeat(2, 450px);
-
 
 		--padding-tb: 60px;
 		--padding-lr: 50px;
