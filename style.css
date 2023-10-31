@@ -45,7 +45,7 @@ html{
 .container_main{
 	display: grid;
 	grid-auto-columns: var(--grid-column);
-	/* gap: calc(.3 * var(--size-h1)); */
+	gap: calc(.3 * var(--size-h1));
 	justify-content: center;
 	width: 100%;
 	padding: var(--header-padding-top) var(--header-padding-lr) var(--header-padding-bottom) var(--header-padding-lr);
@@ -54,7 +54,7 @@ html{
 	align-items: end;
 }
 .container{
-
+	width: 100%;
 	padding: var(--padding-tb) var(--padding-lr);
 }
 
@@ -71,11 +71,11 @@ body{
 /* Top navigation poistion and style */
 nav > ul{
 	display: flex;
-	justify-content: flex-end;
 	gap: 20px;
 	color:black;
 	position: fixed;
-	width: 100%;	
+	width: 100%;
+	max-width: 1000px;	
 	padding: 1em;
 	z-index: 2;
 }
@@ -231,6 +231,19 @@ blockquote{
 	grid-row: 2;	
 }
 
+
+/* Styles of links within article */
+.link {
+	/* position: absolute; [leaving out for now] */
+	display:block;
+	/* left: 5px; */
+	mix-blend-mode: difference;
+	opacity: 30%;
+	font: var(--link-size) 'inter', san-serif;
+	font-style: italic;
+	font-weight: 600;
+	position: relative;
+}
 /* Styles of links that are not within the article */
 a:not(.link) {
 	font: var(--base-type)'inter', san-serif;
@@ -248,18 +261,10 @@ a:not(.link) {
 	top: 70px;
 	left: -80px;
 }
-
-/* Styles of links within article */
-.link {
-	/* position: absolute; [leaving out for now] */
-	display:block;
-	left: 5px;
-	mix-blend-mode: difference;
-	opacity: 50%;
-	font: 32px 'inter', san-serif;
-	font-style: italic;
-	font-weight: 600;
-	position: relative;
+.link-position-4{
+	top: -30px;
+	left: 250px;
+	z-index: -1;
 }
 
 /* Hover style for article links */
@@ -369,6 +374,8 @@ footer {
 	--size-h2: calc(1.3 * var(--base-type));
 	--size-h3: calc(1.2 * var(--base-type));;
 	--blockquote-font-size: calc(1.1 * var(--base-type));
+	--link-size: calc(1.2 * var(--base-type));
+
 	/* for h1+h2+infor */
 	--header-padding-top: calc(2 * var(--base-type));
 	--header-padding-bottom: calc(5 * var(--base-type));
@@ -482,14 +489,10 @@ footer {
 
 		--padding-tb: 60px;
 		--padding-lr: 50px;
+
+		--link-size: calc(2 * var(--base-type));
 	}
-	.container{
-		/* flex-direction: row; */
-	}
-	.container_main{
-		grid-template-columns: 467px 367px;
-		width:100%;
-	}
+
 	.quote{
 		grid-template-columns: repeat(4, 1fr);
 		grid-auto-rows: minmax(50px, auto);
@@ -527,5 +530,14 @@ footer {
 			grid-column:  3/ span 2;
 			align-self: end;
 			justify-self: end;
+			padding-bottom: 80px;
+		}
+
+		.container_main{
+			grid-template-columns: 467px 367px;
+			width:100%;
+		}
+		.container{
+			/* flex-direction: row; */
 		}
 }
