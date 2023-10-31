@@ -133,7 +133,6 @@ h1{
 /* end of the main font */
 
 
-
 h2{
 	font: var(--size-h2) 'inter', san-serif;
 	font-weight: 500;
@@ -334,15 +333,24 @@ a[href^='https://']::after {
 /* Floating back to top button */
 #topButton {
 	position: fixed;
-	font: 40px 'EB Garamond', serif;
-	font-weight: 400;
-	font-style:italic;
 	padding: 4%;
 	border-radius: 50%;
 	bottom: 0;
 	right: 0;
 	margin:1em;
 	z-index: 2;
+	mix-blend-mode: difference;
+}
+
+.top_t{
+	font: calc(1.8* var(--link-size)) 'astloch', san-serif;
+}
+.top_o{
+	font: calc(1.8* var(--link-size)) 'Rubik Puddles', san-serif;
+	letter-spacing:10px;
+}
+.top_p{
+	font: calc(1.8* var(--link-size)) '0xa000', san-serif;
 }
 
 /* Only Bullet points */
