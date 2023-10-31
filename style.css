@@ -53,19 +53,12 @@ html{
 .container_main:last-child{
 	align-items: end;
 }
-.container{
-	width: 100%;
-	padding: var(--padding-tb) var(--padding-lr);
-}
-
 
 
 body{
 	background-color: #ffffff;
 	color: #232426;
 }
-
-
 
 
 /* Top navigation poistion and style */
@@ -206,6 +199,54 @@ blockquote{
 }
 
 
+.container{
+	width: 100%;
+	padding: var(--padding-tb) var(--padding-lr);
+	justify-content: center;
+	gap: 32px; 
+}
+
+
+
+/*background colors*/
+.green{
+	display: grid;
+	grid-template-columns: var(--grid-column);
+	
+	/* display: flex;
+	flex-direction: var(--flex-container);
+	flex-wrap: wrap;
+	max-width: 1400px; */
+
+
+
+	background-color: var(--green-background);
+	color: var(--white-foreground);
+}
+.beige{
+	display: grid;
+	grid-template-columns: var(--grid-column);
+	
+	/* display: flex;
+	flex-direction: var(--flex-container-reverse);
+	flex-wrap: wrap; */
+
+	background-color: var(--beige-background);
+}
+.white{
+	background-color: var(--white-background);
+}
+.lightgreen{
+	display: grid;
+	grid-template-columns: var(--grid-column);
+
+	background-color: var(--lightgreen-background);
+}
+.maxwidth{
+	max-width: 600px;
+}
+
+
 .one{
 	max-width: 500px;
 	padding-right: 20px;
@@ -230,6 +271,21 @@ blockquote{
 	grid-row: 2;	
 }
 
+h3{
+	font: var(--size-h3) 'inter', san-serif;
+	font-weight: 600;
+	line-height: 150%;
+	z-index: 1;
+
+}
+p, ul {
+    font: var(--base-type) 'inter', san-serif;
+	font-weight: 400;
+	line-height: 160%;
+	/* padding-bottom: 10px; */
+	width: 100%;
+	z-index: 1;
+}
 
 /* Styles of links within article */
 .link {
@@ -277,50 +333,6 @@ a:hover:not(.link) {
 	mix-blend-mode: normal;
 	color: rgb(83, 83, 83);
 	opacity: 100%;
-}
-
-/*background colors*/
-.green{
-	display: grid;
-	grid-template-columns: var(--grid-column);
-	gap: 3em;
-	
-	background-color: var(--green-background);
-	color: var(--white-foreground);
-}
-.beige{
-	display: grid;
-	grid-template-columns: var(--grid-column);
-	gap: 3em;
-	
-	background-color: var(--beige-background);
-}
-.white{
-	background-color: var(--white-background);
-}
-.lightgreen{
-	background-color: var(--lightgreen-background);
-}
-.maxwidth{
-	max-width: 600px;
-}
-
-
-
-h3{
-	font: var(--size-h3) 'inter', san-serif;
-	font-weight: 600;
-	line-height: 150%;
-	z-index: 1;
-
-}
-p, ul {
-    font: var(--base-type) 'inter', san-serif;
-	font-weight: 400;
-	line-height: 160%;
-	padding-bottom: 10px;
-	width: 100%;
-	z-index: 1;
 }
 
 /* Adds arrow pointing Up+Right after external links */
@@ -499,6 +511,10 @@ footer {
 		--padding-lr: 50px;
 
 		--link-size: calc(2 * var(--base-type));
+
+		/* --flex-container: row;
+		--flex-container-reverse: row-reverse; */
+
 	}
 
 	.quote{
