@@ -161,9 +161,7 @@ h2{
 	justify-items: center;
 
 	background-color: var(--white-background);
-	width: 100%;
-	/* max-height: var(--quote-height);Temporary solution */
-}
+	width: 100%;}
 
 blockquote{
 	font: var(--blockquote-font-size) 'EB Garamond', serif;
@@ -194,9 +192,6 @@ blockquote{
 .quotelayout3{
 	grid-column: 1;
 }
-/* .quote-layout4{
-	grid-column: 1;
-} */
 .quoteinfo{
 	font: var(--base-type) 'EB Garamond', serif;
 	font-weight: 600;
@@ -212,9 +207,6 @@ blockquote{
 }
 
 .white{
-	/* display: grid;
-	grid-template-columns: 1fr; */
-	
 	display: flex;
 	flex-direction: var(--flex-container);
 	flex-wrap: wrap;
@@ -229,17 +221,11 @@ blockquote{
 
 /*background colors*/
 .green{
-	/* display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-    grid-gap: 20px; */
-	
 	display: flex;
 	flex-direction: var(--flex-container);
 	flex-wrap: wrap;
 
 	background-color: var(--green-background);
-	/* color: var(--white-foreground); */
 }
 
 .green.container {
@@ -256,10 +242,6 @@ blockquote{
 
 }
 
-/* .green.container div:fiirst-child {
-	
-} */
-
 .green.container div:nth-child(2) {
 	border-bottom: var(--white-line);
 	margin: 60px 0px;
@@ -267,8 +249,6 @@ blockquote{
 
 
 .beige{
-	/* display: grid;
-	grid-template-columns: 1fr; */
 	
 	display: flex;
 	flex-direction: var(--flex-container);
@@ -319,37 +299,13 @@ blockquote{
 }
 
 
-/* .maxwidth{
-	max-width: 600px;
-} */
-
 .one{
 	max-width: 450px;
-	
-	/* grid-column:1;
-	grid-row:1;	 */
 }
 .two{	
 	max-width: 450px;
-	/* grid-column:2;
-	grid-row: 1;*/
 }
-/* 
-.line{
-	mix-blend-mode: difference;
-	border-box: 1px solid black;
-} */
-/* 
-.three{
-	max-width: 450px;
-	grid-column:1;
-	grid-row:2;	 
-}
-.four{
-	max-width: 450px;
-	grid-column:2;
-	grid-row: 2;	
-} */
+
 
 h3{
 	font: var(--size-h3) 'inter', san-serif;
@@ -362,16 +318,13 @@ p, ul {
     font: var(--base-type) 'inter', san-serif;
 	font-weight: 400;
 	line-height: 160%;
-	/* padding-bottom: 10px; */
 	width: 100%;
 	z-index: 1;
 }
 
 /* Styles of links within article */
 .link {
-	/* position: absolute; [leaving out for now] */
 	display:block;
-	/* left: 5px; */
 	mix-blend-mode: multiply;
 	opacity: 12%;
 	font: var(--link-size) 'inter', san-serif;
@@ -404,7 +357,6 @@ a:hover {
 }
 .position-4{
 	left: 250px;
-	/* margin-top: -50px; */
 }
 /* copy and paste */
 .position-5{
