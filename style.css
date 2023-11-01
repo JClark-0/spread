@@ -527,6 +527,7 @@ footer {
 
     @page {
         margin-top: 2cm;
+		margin-bottom:1cm;
     }
 
     nav, 
@@ -549,6 +550,10 @@ footer {
     h3 {
         padding-bottom:0.5cm;
     }
+	.container {
+		padding-top:0;
+
+	}
 
     .quote{
         grid-template-columns: repeat(5, 1fr);
