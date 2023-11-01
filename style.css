@@ -157,7 +157,7 @@ h2{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, 1fr);
 	row-gap: calc(3 * var(--base-type));
-	padding: calc(5 * var(--base-type)) var(--base-type);
+	padding: calc(2 * var(--base-type)) var(--base-type);
 	justify-items: center;
 
 	background-color: var(--white-background);
@@ -449,7 +449,7 @@ a[href^='https://']::after {
 	right: 0;
 	margin:1em;
 	z-index: 2;
-	mix-blend-mode: difference;
+	mix-blend-mode: mul;
 }
 
 .top_t{
@@ -506,9 +506,6 @@ footer {
 	--padding-h1-right: 20px ;
 	--padding-h1-bottom: 0px;
 
-	/* --quote-position-1: static;
-	--quote-position-2: static;
-	--quote-position-3: static; */
 	
 	--padding-tb: calc(5 * var(--base-type));
 	--padding-lr: var(--base-type);
@@ -545,7 +542,7 @@ footer {
 		grid-auto-rows: minmax(50px, auto);
 		grid-template-columns: 1fr;
 		width:100% ;
-		padding: 10vmin 5vmax 0px;
+		padding-top: var(--padding-tb);
 	}
 	blockquote{
 		text-align: left;
@@ -556,16 +553,13 @@ footer {
 		justify-self: start;
 	}
 	.quotetitle{
-
 		max-width: 500px;
 	}
 	.quotelayout2{
-
 		align-self: end;
 		justify-self: end;
 	}
 	.quotelayout3{
-
 		align-self: start;
 		justify-self: start;
 	}
@@ -589,9 +583,6 @@ footer {
 		--padding-lr: 50px;
 
 		--link-size: calc(2 * var(--base-type));
-
-		/* --flex-container: row;
-		--flex-container-reverse: row-reverse; */
 
 	}
 	.white{
