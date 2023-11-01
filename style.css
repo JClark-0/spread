@@ -229,7 +229,6 @@ blockquote{
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	gap: 32px; 
 }
 
 .green.container div {
@@ -371,10 +370,13 @@ a:not(.link) {
 a:hover {
 	transition: ease-in-out .2s;
 }
-.link-position-1{
+.link-position{
+	width:fit-content;
+}
+.p1{
 	top: 30px;
 	right: 30px;
-	width:fit-content;
+
 }
 .link-position-2{
 	top: 120px;
