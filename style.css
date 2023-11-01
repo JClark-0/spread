@@ -374,18 +374,24 @@ a:hover {
 .link-position-1{
 	top: 30px;
 	right: 30px;
+	width:fit-content;
 }
 .link-position-2{
 	top: 120px;
 	left: 180px;
+	width:fit-content;
+
 }
 .link-position-3{
 	top: 70px;
 	left: -80px;
+	margin-left:-80px;
+	width:fit-content;
 }
 .link-position-4{
 	left: 250px;
 	mix-blend-mode: multiply;
+	width:fit-content;
 	/* margin-top: -50px; */
 }
 
