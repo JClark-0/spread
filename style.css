@@ -344,10 +344,7 @@ a:hover {
 .hyperlink{
 	margin-top: var(--link-space);
 }
-.position-1{
-	top: 30px;
-	right: -30px;
-}
+
 .position-2{
 	top: 30px;
 	left: 100px;
