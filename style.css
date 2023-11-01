@@ -161,7 +161,9 @@ h2{
 	justify-items: center;
 
 	background-color: var(--white-background);
-	width: 100%;}
+	width: 100%;
+	margin-top: 80px;
+}
 
 blockquote{
 	font: var(--blockquote-font-size) 'EB Garamond', serif;
@@ -170,7 +172,6 @@ blockquote{
 	max-width: 400px;
 	height: 100%;
 	text-align: center;
-	
 }
 
 .quotetitle{
