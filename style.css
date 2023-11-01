@@ -244,7 +244,7 @@ blockquote{
 } */
 
 .green.container div:nth-child(2) {
-	border-bottom:#ffffff 1px solid;
+	border-bottom: var(--white-line);
 	margin: 60px 0px;
 }
 
@@ -272,7 +272,7 @@ blockquote{
 }
 
 .beige.container div:nth-child(2) {
-	border-bottom: black 1px solid;
+	border-bottom: var(--black-line);
 	margin: 60px 0px;
 }
 
@@ -301,7 +301,7 @@ blockquote{
 }
 
 .lightgreen.container div:nth-child(2) {
-	border-bottom: black 1px solid;
+	border-bottom: var(--black-line);
 	margin: 60px 0px;
 }
 
@@ -507,50 +507,82 @@ footer {
 	--beige-background: #E0D1B2;
 	--white-background: white;
 	--lightgreen-background: #F0F0E2;
+
+	--white-line: #ffffff 1px solid;
+    --black-line: black 1px solid;
 }
 
 
 @media print {
-	:root { 
-	--green-foreground: black;
-	--white-foreground: black;
-	--green-background: white; 
-	--beige-background: white;
-	--lightgreen-background: white;
+    :root { 
+    --green-foreground: black;
+    --white-foreground: black;
+    --green-background: white; 
+    --beige-background: white;
+    --lightgreen-background: white;
 
-	--base-type: 12px;
-	}
+    --white-line: black 1px solid;
 
-	@page :first {
-		margin-top: 1cm;
-	}
+    }
 
-	@page {
-		margin-top: 2cm;
-	}
+    @page {
+        margin-top: 2cm;
+    }
 
-	nav, 
-	.link,
-	#topButton,
-	footer {
-	display: none;
-	}
+    nav, 
+    .link,
+    #topButton,
+    footer {
+    display: none;
+    }
 
-	.one { 
-	max-width: 100%;
-	/*break-before: always; */
-	}
+    .one, .two, .three, .four { 
+        max-width: 100%;
+        /*break-before: always; */
+    }
+    
+    h3,
+    blockquote {
+        break-inside: avoid;
+    }
+    
+    h3 {
+        padding-bottom:0.5cm;
+    }
 
-	.two { 
-		max-width: 100%;
-		/*break-before: always; */
-	}
-	
-	h3, 
-	blockquote {
-	break-inside: avoid;
-	}
+    .quote{
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        width:100%;
 
+    }
+        .quotelayout1{
+            grid-column: 2 / span 5;
+            text-align: center;
+        }
+        .quotetitle{
+            grid-row: 2;
+            grid-column: 2 / span 3;
+            text-align: center;
+        }
+        .quotelayout2{
+            grid-column:  1/ span 2;
+            align-self: end;
+            justify-self: end;
+            text-align: center;
+        }
+        .quotelayout3{
+            grid-row: 3;
+            grid-column:  4/ span 5;
+            align-self: end;
+            justify-self: end;
+            text-align: center;
+        }
+        .quote-layout4{
+            grid-row: 4;
+            grid-column:  1/ span 5;
+            break-after: page;
+        }
 }
 
 @media(min-width: 376px) and (max-width: 899px){ 
