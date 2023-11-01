@@ -48,6 +48,7 @@ html{
 	gap: calc(.3 * var(--size-h1));
 	justify-content: center;
 	width: 100%;
+	background-color: var(--lightgreen-background);
 	padding: var(--header-padding-top) var(--header-padding-lr) var(--header-padding-bottom) var(--header-padding-lr);
 }
 .container_main:last-child{
@@ -228,6 +229,7 @@ blockquote{
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	gap: 32px; 
 }
 
 .green.container div {
