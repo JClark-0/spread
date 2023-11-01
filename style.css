@@ -158,6 +158,7 @@ h2{
 	grid-template-columns: repeat(auto-fill, 1fr);
 	row-gap: var(--base-type);
 	padding: calc(5 * var(--base-type)) var(--base-type);
+	justify-items: center;
 
 	background-color: var(--white-background);
 	width: 100%;
@@ -170,6 +171,8 @@ blockquote{
 	font-style: italic;
 	max-width: 400px;
 	height: 100%;
+	text-align: center;
+	
 }
 .quotelayout1{
 	grid-column: 1;
@@ -177,7 +180,7 @@ blockquote{
 .quotetitle{
 	border: 2px dotted var(--green-foreground);
 	border-radius: 50%;
-	width: 20vmax;
+	width: 80%;
 	line-height: 100px;
 	max-height: 100px;
 	text-align: center;
@@ -562,33 +565,33 @@ footer {
 		text-align: center;
 
     }
-        .quotelayout1{
-            grid-column: 2 / span 5;
-            text-align: center;
-        }
-        .quotetitle{
-            grid-row: 2;
-            grid-column: 2 / span 3;
-            text-align: center;
-        }
-        .quotelayout2{
-            grid-column:  1/ span 2;
-            align-self: end;
-            justify-self: end;
-            text-align: center;
-        }
-        .quotelayout3{
-            grid-row: 3;
-            grid-column:  4/ span 5;
-            align-self: end;
-            justify-self: end;
-            text-align: center;
-        }
-        .quote-layout4{
-            grid-row: 4;
-            grid-column:  1/ span 5;
-            break-after: page;
-        }
+	 .quotelayout1{
+		grid-column: 2 / span 5;
+		text-align: center;
+	}
+	.quotetitle{
+		grid-row: 2;
+		grid-column: 2 / span 3;
+		text-align: center;
+	}
+	.quotelayout2{
+		grid-column:  1/ span 2;
+		align-self: end;
+		justify-self: end;
+		text-align: center;
+	}
+	.quotelayout3{
+		grid-row: 3;
+		grid-column:  4/ span 5;
+		align-self: end;
+		justify-self: end;
+		text-align: center;
+	}
+	.quote-layout4{
+		grid-row: 4;
+		grid-column:  1/ span 5;
+		break-after: page;
+	}
 }
 
 @media(min-width: 376px) and (max-width: 899px){ 
@@ -667,6 +670,10 @@ footer {
 	--quote-top-3: -15vmin;
 	--quote-height: 550px; */
 	}
+	blockquote{
+		text-align: left;
+
+	};
 		.quotelayout1{
 			grid-column: 1 / span 4;
 		}
