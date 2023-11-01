@@ -449,7 +449,8 @@ a[href^='https://']::after {
 	right: 0;
 	margin:1em;
 	z-index: 2;
-	mix-blend-mode: mul;
+	opacity: 80%;
+	mix-blend-mode: multiply;
 }
 
 .top_t{
@@ -480,8 +481,8 @@ marquee {
 footer {
 	background-color: var(--green-background);
 	color: var(--white-foreground); 
-	padding: 2em;
-    font: var(--base-type) 'inter', san-serif;
+	padding: var(--base-type);
+    font: calc(.8 * var(--base-type)) 'inter', san-serif;
 }
 
 
@@ -645,13 +646,10 @@ footer {
 	.container{
 		/* flex-direction: row; */
 	}
+
 	.position-1{
 		top: 30px;
 		right: 30px;
-	}
-	.position-2{
-		top: 120px;
-		left: 180px;
 	}
 	.position-3{
 		top: 70px;
@@ -659,19 +657,21 @@ footer {
 		margin-left:-80px;
 	}
 	.position-4{
-		left: 250px;
+		top: -150px;
+		left: 70px;
 	}
-	/* copy and paste */
 	.position-5{
-	
+		top: -70px;
+		left: 200px;
 	}
 	.position-6{
-	
+		top: 460px;
+		left: -60px;
 	}
 	.position-7{
-	
+		top: 230px;
+		left: -180px;
 	}
-	/* copy and paste */
 	
 }
 @media(min-width: 1200px) { 
@@ -707,6 +707,19 @@ footer {
 		align-self: end;
 		justify-self: end;
 	}
+	.position-1{
+		top: 30px;
+		right: 30px;
+	}
+	.position-5{
+		top: -70px;
+		left: -60px;
+	}
+	.position-7{
+		top: 230px;
+		left: 180px;
+	}
+	
 }
 
 
